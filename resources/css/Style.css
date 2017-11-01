@@ -1,0 +1,154 @@
+/*-----------------------------------------*/
+/*BASIC SETUP*/
+/*-----------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------*/
+/*Container SETUP*/
+/*-----------------------------------------*/
+
+
+.container-css {
+	margin: 80px auto;
+}
+
+
+/*-----------------------------------------*/
+/*Section post*/
+/*-----------------------------------------*/
+
+
+.jumbotron-css {
+	margin-top: 40px;
+	padding: 0 !important;
+	position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+	max-width: 680px;
+	background-color: #FAFAFA;
+	border: 1px solid #D6D6D6;
+}
+
+.img {
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.post-content {
+	margin-top: 10px
+}
+
+
+/*-----------------------------------------*/
+/*Section Comments*/
+/*-----------------------------------------*/
+
+.comments {
+	max-width: 680px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+/*-----------------------------------------*/
+/*Section Post-a-comment*/
+/*-----------------------------------------*/
+
+.post-a-comment {
+	margin-top: 80px;
+	max-width: 680px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+textarea
+{
+  border:2px solid #D6D6D6;
+  border-radius: 10px;
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+}
+
+.btn-send {
+	border: 0;
+	float: right;
+}
+
+
+/*-----------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-----------------------------------------*/
+
+p {
+	padding-bottom: 5px;
+	border-bottom: 2px solid #FAFAFA;
+}
+
+
+/*-----------------------------------------*/
+/*MEDIA QUERIES*/
+/*-----------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+	body {
+		font-size: 18px;
+	}
+	
+	.jumbotron-css, .comments, .post-a-comment {
+		max-width: 500px;
+	}
+	
+	h2 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	body {
+		font-size: 16px;
+	}
+	
+	.jumbotron-css, .comments, .post-a-comment {
+		max-width: 320px;
+	}
+	
+	.img {
+		margin: 0; 
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+		width: 60%
+	}
+	
+	h2 {
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	.post-content {
+		text-align: center;
+	}
+	
+	p {
+		text-align: center;
+	}
+}
