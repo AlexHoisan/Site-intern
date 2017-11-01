@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -63,6 +64,7 @@ body {
 	max-width: 680px;
 	position: relative;
 	left: 50%;
+	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
 }
 
@@ -76,6 +78,7 @@ body {
 	max-width: 680px;
 	position: relative;
 	left: 50%;
+	-webkit-transform: translate(-50%);
 	transform: translate(-50%);
 }
 
@@ -100,7 +103,7 @@ textarea
 
 p {
 	padding-bottom: 5px;
-	border-bottom: 2px solid #FAFAFA;
+	border-bottom: 2px solid #D6D6D6;
 }
 
 
@@ -135,6 +138,7 @@ p {
 		margin: 0; 
 		position: relative;
 		left: 50%;
+		-webkit-transform: translate(-50%);
 		transform: translate(-50%);
 		width: 60%
 	}
