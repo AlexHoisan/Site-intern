@@ -4,4 +4,7 @@ function myFunction() {
     var t = document.createTextNode(text.value);
     para.appendChild(t);
     document.getElementById("comments").appendChild(para);
+	
+	document.getElementById("noComments").innerHTML="";
+	document.getElementById("words").value = '';
 }
